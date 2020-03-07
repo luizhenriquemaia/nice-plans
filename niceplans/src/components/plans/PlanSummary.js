@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-const PlanSummary = () =>{
+const PlanSummary = ({ plan }) =>{
     return(
         <div className="card plan-cards">
             <div className="card-content">
-                <span className="card-title">Plan Title</span>
+                <span className="card-title">{plan.title}</span>
                 <p>Posted by Luiz Henrique</p>
                 <p>3rd September, 2am</p>
             </div>
