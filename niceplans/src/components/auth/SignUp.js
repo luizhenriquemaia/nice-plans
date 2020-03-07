@@ -21,7 +21,7 @@ class SignUp extends Component {
         return (
             <div className="container">
                 <form onSubmit={this.handleSubmit}>
-                    <h5 className="title-page">Sign In</h5>
+                    <h5 className="title-page">Sign Up</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" onChange={this.handleChange} />
