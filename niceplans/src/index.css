@@ -27,6 +27,7 @@ nav {
 
 .title-page {
   text-align: center;
+  text-transform: capitalize;
   margin: 40px 0px 40px;
 }
 

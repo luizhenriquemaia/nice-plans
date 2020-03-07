@@ -3,8 +3,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
 import PlanDetails from './components/plans/PlanDetails'
+import CreatePlan from './components/plans/CreatePlan'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
           <Route path='/plan/:id' component={PlanDetails} />
           <Route path='/signin' component={SignIn} />
           <Route path='/signup' component={SignUp} />
+          <Route path='/createplan' component={CreatePlan} />
         </Switch>
       </div>
     </BrowserRouter>
