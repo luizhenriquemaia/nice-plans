@@ -8,8 +8,8 @@ const PlanList = ({ plans }) => {
         <div className="plan-list section">
             { plans && plans.map(plan => {
                 return (
-                    <Link to={'/plan/' + plan.id}>
-                        <PlanSummary plan={plan} key={plan.id} />
+                    <Link to={'/plan/' + plan.id} key={plan.id}>
+                        <PlanSummary plan={plan} />
                     </Link>
                 )
             }) }
