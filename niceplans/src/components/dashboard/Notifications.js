@@ -1,10 +1,16 @@
 import React from 'react'
 
 
-const Notifications = () => {
+const Notifications = (props) => {
     return (
         <div>
-            <p>Notifications</p>
+            <span>Notifications</span>
+            <ul className="notifications">
+                <li>Notifications</li>
+                <li>Notifications</li>
+                <li>Notifications</li>
+                <li>Notifications</li>
+            </ul>
         </div>
     )
 }
