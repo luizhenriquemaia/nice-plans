@@ -21,9 +21,17 @@ const store = createStore(
     )
 );
 
+// react-redux-firebase config
+const rrfConfig = {
+    // collection name
+    userProfile: 'users',
+    useFirestoreForProfile: true,
+}
+
 const rrfProps = {
     firebase,
     config: fbConfig,
+    config: rrfConfig,
     dispatch: store.dispatch,
     createFirestoreInstance
 }
