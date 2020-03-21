@@ -18,7 +18,7 @@ exports.planCreated = functions.firestore
     .onCreate(doc => {
         const plan = doc.data()
         const notification = {
-            content: 'Added a new project',
+            content: 'Added a new plan',
             user: `${plan.authorFirstName} ${plan.authorLastName}`,
             time: admin.firestore.FieldValue.serverTimestamp()
     }
