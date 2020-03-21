@@ -5,17 +5,21 @@ import moment from 'moment'
 const Notifications = (props) => {
     const { notifications } = props
     return (
-        <div>
-            <span className="title">Notifications</span>
+        <div className="notifications section">
+            <div className="title">
+                Notifications
+            </div>
             <ul className="notifications-list">
                 { notifications && notifications.map(item => {
                     return (
                         <li key={item.id}>
-                            <span class="user-name">{item.user} - </span>
-                            <span>{item.content}</span>
-                            <div class="note-date">
+                            <p>
+                                <span class="user-name">{item.user} - </span> 
+                                {item.content}
+                            </p>
+                            <p class="note-date">
                                 {moment(item.time.toDate()).fromNow()}
-                            </div>
+                            </p>
                         </li>
                     )
                 }) }

@@ -3,6 +3,7 @@
   --navbar: #4D4D4D;
   --buttons: #E699FF;
   --plans: #8878C2;
+  --notifications: #A199FF;
 }
 
 /* fonts */
@@ -91,21 +92,35 @@ button {
   color: #ffffff;
 }
 
+/* Dashboard, Plan List and Notifications */
+.dashboard {
+  font-weight: 300;
+}
+
+.dashboard p {
+  font-weight: normal;
+  margin: 0;
+}
+
+
 .dashboard .plan-list{
   grid-column: 1/6;
 }
 
 .dashboard .notifications{
-  background: #A199FF;
+  position: relative;
+  background: var(--notifications);
   color: white;
   grid-column: 8/12;
-  margin-top: 20px;
+  margin: 1.5em 0 2em 0;
   padding: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 .notifications .title{
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .notifications .notifications-list {
@@ -119,6 +134,10 @@ button {
 
 .notifications .user-name {
   color: #3D3D3D;
+}
+
+.notifications .note-date {
+  font-size: 13px;
 }
 
 
